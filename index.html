@@ -1,54 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shayan.Dev | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <header class="navbar"><div class="nav-container"><a href="#" style="color:var(--primary); font-size:1.5rem; font-weight:bold; text-decoration:none;">Shayan.Dev</a><nav class="nav-links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#testimonials">Reviews</a><a href="#contact">Contact</a></nav></div></header>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root { --primary: #38bdf8; --bg: #0f172a; --card: #1e293b; --text: #f8fafc; }
+body { background: radial-gradient(circle at top right, #1e1b4b, #0f172a); color: var(--text); font-family: 'Segoe UI', sans-serif; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+.container { width: 90%; max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
 
-    <section id="about" class="container">
-        <h1>Hi, I am Shayan Azhar</h1>
-        <p>Mobile & Web Developer with 4 years of experience. I build high-performance Flutter apps and modern web solutions.</p>
-        <a href="https://wa.me/923296427396" class="btn" style="width:200px;">Chat on WhatsApp</a>
-    </section>
+/* Nav */
+.navbar { background: rgba(15, 23, 42, 0.9); padding: 20px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #334155; }
+.nav-container { display: flex; justify-content: space-between; align-items: center; width: 90%; margin: 0 auto; }
+.nav-links { display: flex; gap: 20px; }
+.nav-links a { color: white; text-decoration: none; font-weight: bold; }
 
-    <section id="projects" class="container">
-        <h2>Featured Projects</h2>
-        <div class="grid">
-            <div class="card"><img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800" class="project-img"><h3>Expense Splitter</h3><p>Flutter app to manage shared expenses.</p><a href="#" class="btn">View Project</a></div>
-            <div class="card"><img src="https://images.unsplash.com/photo-1593720213428-f8a5b96bea40?w=800" class="project-img"><h3>Student Support</h3><p>University service portal.</p><a href="#" class="btn">View Project</a></div>
-            <div class="card"><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800" class="project-img"><h3>Plumbing App</h3><p>Service booking platform.</p><a href="#" class="btn">View Project</a></div>
-            <div class="card"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800" class="project-img"><h3>School System</h3><p>Management ERP solution.</p><a href="#" class="btn">View Project</a></div>
-            <div class="card"><img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800" class="project-img"><h3>Password Safe</h3><p>Secure local encryption vault.</p><a href="#" class="btn">View Project</a></div>
-        </div>
-    </section>
+/* Grid */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+.card { background: var(--card); padding: 20px; border-radius: 15px; border: 1px solid #334155; }
+.project-img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; }
 
-    <section id="testimonials" class="container">
-        <h2>Client Reviews</h2>
-        <div class="grid">
-            <div class="card"><h4>Sarah</h4><div class="stars"><i class="fas fa-star"></i>...</div><p>"Extraordinary skills, truly professional!"</p></div>
-            <div class="card"><h4>Joseph</h4><div class="stars"><i class="fas fa-star"></i>...</div><p>"He understands requirements perfectly."</p></div>
-            <div class="card"><h4>Imtiaz</h4><div class="stars"><i class="fas fa-star"></i>...</div><p>"Great logic and fast delivery."</p></div>
-            <div class="card"><h4>David</h4><div class="stars"><i class="fas fa-star"></i>...</div><p>"Stunning UI/UX work!"</p></div>
-            <div class="card"><h4>Jason</h4><div class="stars"><i class="fas fa-star"></i>...</div><p>"Reliable and super talented."</p></div>
-            <div class="card"><h4>Yousaf</h4><div class="stars"><i class="fas fa-star"></i>...</div><p>"Exceeded all my expectations."</p></div>
-        </div>
-    </section>
+/* Buttons & Stars */
+.btn { display: block; text-align: center; background: var(--primary); color: #0f172a; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 15px; }
+.stars { color: #fbbf24; margin: 10px 0; }
 
-    <section id="contact" class="container">
-        <h2>Work With Me</h2>
-        <form action="https://formspree.io/f/mqazqjvz" method="POST">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <textarea name="message" placeholder="Project Details" rows="4" required></textarea>
-            <button type="submit" class="btn" style="width:100%;">Send Message</button>
-        </form>
-    </section>
+/* Form */
+form { display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: auto; }
+input, textarea { padding: 12px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: white; }
 
-    <footer><p>&copy; 2026 Shayan Azhar. All Rights Reserved.</p></footer>
-</body>
-</html>
+footer { background: #0b0f19; padding: 30px; text-align: center; border-top: 1px solid #334155; margin-top: auto; }
+@media (max-width: 600px) { .nav-container { flex-direction: column; gap: 15px; } }
