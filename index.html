@@ -3,51 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shayan Azhar | Developer</title>
+    <title>Shayan Azhar | Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="navbar"><div class="nav-container"><a href="#" class="logo">Shayan<span>.Dev</span></a><nav class="nav-links"><a href="#projects">Projects</a><a href="#testimonials">Reviews</a><a href="#contact">Contact</a></nav></div></header>
 
-    <section id="home" class="container"><h1>Hi, I am Shayan Azhar</h1><p>Modern Mobile & Web Developer</p></section>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" style="font-size:1.5rem; font-weight:bold; color:var(--primary); text-decoration:none;">Shayan.Dev</a>
+            <nav class="nav-links">
+                <a href="#about">About</a><a href="#projects">Projects</a><a href="#testimonials">Reviews</a><a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
+    <!-- Expanded About Section -->
+    <section id="about" class="container">
+        <div class="hero-content">
+            <h1>Hi, I am Shayan Azhar</h1>
+            <p class="about-desc">A passionate Mobile & Web Developer with 4 years of experience. I specialize in building high-quality, scalable, and user-centric applications using Flutter and modern web frameworks.</p>
+            <p class="about-desc">My focus is on creating seamless digital experiences that solve real-world problems. Whether it's complex mobile architecture or responsive web interfaces, I strive for excellence in every line of code.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
     <section id="projects" class="container">
         <h2>Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card"><img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800" class="project-image"><h3>Student App</h3><a href="#" class="btn">View</a></div>
-            <div class="project-card"><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800" class="project-image"><h3>Plumbing App</h3><a href="#" class="btn">View</a></div>
-            <div class="project-card"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800" class="project-image"><h3>School System</h3><a href="#" class="btn">View</a></div>
-            <div class="project-card"><img src="img1.png" class="project-image"><h3>Expense Splitter</h3><a href="https://github.com/shayan314/bill_splitter" class="btn">View Code</a></div>
-            <div class="project-card"><img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800" class="project-image"><h3>Password Safe</h3><a href="https://github.com/shayan314/password_safe" class="btn">View Code</a></div>
+        <div class="grid">
+            <div class="card"><h3>Expense Splitter</h3><p>Flutter app for hostel expense management.</p><div style="margin-top:15px;"><a href="#" class="btn">Live</a><a href="#" class="btn btn-sec">Code</a></div></div>
+            <div class="card"><h3>Plumbing App</h3><p>Service booking and scheduling app.</p><div style="margin-top:15px;"><a href="#" class="btn">Live</a><a href="#" class="btn btn-sec">Code</a></div></div>
+            <div class="card"><h3>School System</h3><p>Full-stack ERP for administration.</p><div style="margin-top:15px;"><a href="#" class="btn">Live</a><a href="#" class="btn btn-sec">Code</a></div></div>
+            <div class="card"><h3>Password Safe</h3><p>Secure local encryption vault.</p><div style="margin-top:15px;"><a href="#" class="btn">Live</a><a href="#" class="btn btn-sec">Code</a></div></div>
+            <div class="card"><h3>Student Support</h3><p>Web portal for university services.</p><div style="margin-top:15px;"><a href="#" class="btn">Live</a><a href="#" class="btn btn-sec">Code</a></div></div>
         </div>
     </section>
 
+    <!-- Reviews Section -->
     <section id="testimonials" class="container">
         <h2>Client Reviews</h2>
-        <div class="reviews-grid">
-            <!-- 10 Reviews -->
-            <div class="review-card"><p>"Extraordinary skills! I am satisfied."</p><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><h4>- Sarah</h4></div>
-            <div class="review-card"><p>"Shayan is different. He listens and delivers."</p><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div><h4>- Joseph</h4></div>
-            <div class="review-card"><p>"Professional approach to complex logic."</p><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><h4>- Imtiaz</h4></div>
-            <div class="review-card"><p>"UI/UX was stunning. My users love it."</p><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><h4>- David</h4></div>
-            <div class="review-card"><p>"Fast, reliable, and super talented."</p><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><h4>- Jason</h4></div>
-            <div class="review-card"><p>"Honestly, he exceeded all expectations."</p><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div><h4>- Yousaf</h4></div>
-            <div class="review-card"><p>"Clean code and very proactive."</p><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><h4>- Alex</h4></div>
-            <div class="review-card"><p>"Great developer! Highly recommended."</p><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><h4>- Maria</h4></div>
-            <div class="review-card"><p>"Lifesaver! Launched my startup in record time."</p><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><h4>- Kevin</h4></div>
-            <div class="review-card"><p>"Cares about project success. Great work."</p><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div><h4>- Zoya</h4></div>
+        <div class="grid">
+            <div class="card"><p>"Extraordinary skills, really impressed!"</p><h4>- Sarah</h4></div>
+            <div class="card"><p>"He listens and delivers perfectly."</p><h4>- Joseph</h4></div>
+            <div class="card"><p>"Expert in complex logic and UI."</p><h4>- Imtiaz</h4></div>
+            <div class="card"><p>"Stunning work, love the flow."</p><h4>- David</h4></div>
+            <div class="card"><p>"Reliable and super talented."</p><h4>- Jason</h4></div>
+            <div class="card"><p>"Exceeded all expectations."</p><h4>- Yousaf</h4></div>
+            <div class="card"><p>"Clean code, proactive developer."</p><h4>- Alex</h4></div>
+            <div class="card"><p>"Highly recommended."</p><h4>- Maria</h4></div>
+            <div class="card"><p>"Record time delivery, lifesaver."</p><h4>- Kevin</h4></div>
+            <div class="card"><p>"Really appreciates his effort."</p><h4>- Zoya</h4></div>
         </div>
     </section>
 
-    <section id="contact" class="container" style="text-align:center;">
+    <footer class="container" style="text-align:center;">
         <h2>Get In Touch</h2>
-        <a href="https://wa.me/923296427396" target="_blank" class="btn"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; 2026 Shayan Azhar. All Rights Reserved.</p>
-        <p><i class="fas fa-envelope"></i> <a href="mailto:chshayan314@gmail.com" style="color:#6366f1;">chshayan314@gmail.com</a></p>
+        <p>chshayan314@gmail.com</p>
+        <a href="https://wa.me/923296427396" class="btn" style="margin-top:20px;">Chat on WhatsApp</a>
     </footer>
 </body>
 </html>
